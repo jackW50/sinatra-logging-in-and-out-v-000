@@ -7,7 +7,7 @@
   </head>
   <body id="page-top">
     In Account
-    
+    <%User.logged_in?(session)%>
     <h2><%=@user.username%></h2>
     <h3><%=@user.balance%></h3>
     
