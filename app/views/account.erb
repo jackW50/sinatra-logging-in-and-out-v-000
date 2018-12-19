@@ -7,9 +7,9 @@
   </head>
   <body id="page-top">
 
-    <%if Helpers.is_logged_in?(session)%>
-      <h1><%="Welcome #{Helpers.current_user(session).username}"%></h1>
-      <h3><%=Helpers.current_user(session).balance%></h3>
+    
+      <h1><%="Welcome #{@user.username}"%></h1>
+      <h3><%=@user.balance%></h3>
     <%else%>
       <a href='/'>Click Here To Log In</a>
     <%end%>
